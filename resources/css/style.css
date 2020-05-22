@@ -12,13 +12,15 @@
   box-sizing: border-box;
 }
 
-html {
+html,
+body {
   background-color: #fff;
   color: #555;
   font-family: "Lato", "Arial", sans-serif;
   font-size: 20px;
   font-weight: 300;
   text-rendering: optimizeLegibility;
+  overflow-x: hidden;
 }
 
 .clearfix {
@@ -297,13 +299,17 @@ header {
   background-color: #f4f4f4;
 }
 
-.steps-box:first-child {
-  text-align: right;
-  padding-right: 3%;
+.steps-box {
   margin-top: 30px;
 }
 
+.steps-box:first-child {
+  text-align: right;
+  padding-right: 3%;
+}
+
 .steps-box:last-child {
+  text-align: left;
   padding-left: 3%;
   margin-top: 70px;
 }
@@ -325,8 +331,8 @@ header {
   border: 2px solid #e67e22;
   display: block;
   border-radius: 50%;
-  height: 55px;
-  width: 55px;
+  height: 54px;
+  width: 54px;
   text-align: center;
   padding: 5px;
   float: left;
@@ -379,7 +385,7 @@ blockquote {
   margin-top: 40px;
 }
 
-blockquote::before {
+blockquote:before {
   content: "\201C";
   font-size: 500%;
   display: block;
